@@ -12,7 +12,7 @@ PROCEDURE Insert(VAR Ptr: Tree; Data: CHAR);
 BEGIN {Insert}
   IF Ptr = NIL
   THEN
-    BEGIN {‘®§¤ ¥¬ «¨αβ α® §­ η¥­¨¥¬ Data}
+    BEGIN {β€Β®Β§Β¤Β Β¥Β¬ Β«Β¨Γ΅ΓΆ Γ΅Β® Β§Β­Β Γ§Β¥Β­Β¨Β¥Β¬ Data}
       NEW(Ptr);
       Ptr^.LLink := NIL;
       Ptr^.RLink := NIL;
@@ -30,7 +30,7 @@ END;  {Insert}
 PROCEDURE PrintTree(Ptr: Tree);
 BEGIN {PrintTree}
   IF Ptr <> NIL
-  THEN  {¥η β ¥β ―®¤¤¥ΰ¥Ά® α«¥Ά , Ά¥ΰθ¨­γ, ―®¤¤¥ΰ¥Ά® α―ΰ Ά }
+  THEN  {ΒΒ¥Γ§Β ΓΆΒ Β¥ΓΆ Β―Β®Β¤Β¤Β¥Γ Β¥ΒΆΒ® Γ΅Β«Β¥ΒΆΒ , ΒΆΒ¥Γ Γ¨Β¨Β­Γ£, Β―Β®Β¤Β¤Β¥Γ Β¥ΒΆΒ® Γ΅Β―Γ Β ΒΆΒ }
     BEGIN
       PrintTree(Ptr^.LLink);
       WRITE(Ch);
@@ -46,5 +46,5 @@ BEGIN {TreeSort}
       READ(Ch);
       Insert(Root, Ch)
     END;
-  PrintTree(Root);
+  PrintTree(Root)
 END.  {TreeSort}
