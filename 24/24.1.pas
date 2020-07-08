@@ -33,7 +33,7 @@ BEGIN {PrintTree}
   THEN  {¥ç â ¥â ¯®¤¤¥à¥¢® á«¥¢ , ¢¥àè¨­ã, ¯®¤¤¥à¥¢® á¯à ¢ }
     BEGIN
       PrintTree(Ptr^.LLink);
-      WRITE(Ch);
+      WRITE(Ptr^.Ch);
       PrintTree(Ptr^.RLink)
     END;
   WRITELN
