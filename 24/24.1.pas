@@ -35,8 +35,7 @@ BEGIN {PrintTree}
       PrintTree(Ptr^.LLink);
       WRITE(Ptr^.Ch);
       PrintTree(Ptr^.RLink)
-    END;
-  WRITELN
+    END
 END;  {PrintTree}
 BEGIN {TreeSort}
   Root := NIL;
